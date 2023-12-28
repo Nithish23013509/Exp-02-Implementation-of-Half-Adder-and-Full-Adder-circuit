@@ -22,9 +22,10 @@ Adders are digital circuits that carry out addition of numbers.
 Half adder is a combinational circuit that performs simple addition of two binary numbers. The input variables designate the augend and addend bits; the output variables produce the sum and carry. It is necessary to specify two output variables because the result may consist of two binary digits.
 
 Sum = A’B+AB’ =A ⊕ B Carry = AB
+
 ![292767957-3e6797d2-4064-4f2a-b129-752f103a15cc](https://github.com/Nithish23013509/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/149038138/fe444606-cfe3-4b25-8b94-169195d6f96c)
 
-``
+```
 module de3hafeez(a,b,sum,carry);
 input a,b;
 output sum,carry;
@@ -32,7 +33,8 @@ xor(sum,a,b);
 and(carry,a,b);
 endmodule
 ```
-# RTL REALIZATION
+
+RTL REALIZATION
 ![292768055-52c27ea9-5035-4c57-95a6-726a3120e907](https://github.com/Nithish23013509/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/149038138/f9f43422-de6b-4371-beb0-8144c64e2e69)
 # TRUTH TABLE
 ![292768068-349a992b-f4f9-43fd-b366-7da7c7f8f50d](https://github.com/Nithish23013509/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/149038138/3255d42c-841f-4972-a391-89b2372ca0a8)
